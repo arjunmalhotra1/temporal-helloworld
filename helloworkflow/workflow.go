@@ -7,7 +7,7 @@ import (
 )
 
 func Workflow(ctx workflow.Context, name string) (string, error) {
-	return "", nil
+	return "Hello!" + name, nil
 }
 
 func Activity(ctx context.Context) (string, error) {

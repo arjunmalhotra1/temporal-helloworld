@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	c, err := client.NewClient(client.Options{})
+	c, err := client.NewLazyClient(client.Options{})
 	if err != nil {
 		log.Fatal("Unable to make cleint ", err)
 	}
